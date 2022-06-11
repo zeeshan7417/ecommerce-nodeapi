@@ -1,0 +1,1843 @@
+{
+	"info": {
+		"_postman_id": "64376531-9ded-4a7e-b443-4e7d8fde1910",
+		"name": "ecomerce-api-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Admin User create product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWY5ZTRhYTE0ZDkyZTRiYmE1MGFjYiIsImlhdCI6MTY1NDYyODAyOSwiZXhwIjoxNjU0NjMxNjI5fQ.r_5Gx4GT_OVc9IgAZI80lj7hb7I7IUheAnznalLYiS4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Apple iPhone 13 max pro  (64 GB) - (Product) RED (3rd Generation)",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "11.94 cm (4.7-inch) Retina HD display\nAdvanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps\n7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording\nA15 Bionic chip for lightning-fast performance\nUp to 15 hours of video playback\nDurable design and IP67 water resistance\nHome button with Touch ID for secure authentication\niOS 15 packs new features to do more with iPhone than ever before",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "109901",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": [
+										"/C:/Users/zeesh/OneDrive/Desktop/814HXdgWrwL._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/51ELxehFBtL._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/61A0Zu4K-TL._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/71bHhPpgs+L._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/81YF0wledtL._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/613fTJaey-L._SX679_.jpg"
+									]
+								},
+								{
+									"key": "category",
+									"value": "Mobile",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "100",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/admin/products/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"products",
+								"new"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Apple iPhone 13 max pro  (64 GB) - (Product) RED (3rd Generation)",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "11.94 cm (4.7-inch) Retina HD display\nAdvanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps\n7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording\nA15 Bionic chip for lightning-fast performance\nUp to 15 hours of video playback\nDurable design and IP67 water resistance\nHome button with Touch ID for secure authentication\niOS 15 packs new features to do more with iPhone than ever before",
+											"type": "default"
+										},
+										{
+											"key": "price",
+											"value": "109901",
+											"type": "default"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": [
+												"/C:/Users/zeesh/OneDrive/Desktop/814HXdgWrwL._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/51ELxehFBtL._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/61A0Zu4K-TL._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/71bHhPpgs+L._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/81YF0wledtL._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/613fTJaey-L._SX679_.jpg"
+											]
+										},
+										{
+											"key": "category",
+											"value": "Mobile",
+											"type": "default"
+										},
+										{
+											"key": "stock",
+											"value": "100",
+											"type": "default"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/admin/products/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"products",
+										"new"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1950"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79e-uWTx0FY/JBH1qBNs75Cjj8ck9wQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:10:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"create\": {\n        \"name\": \"Apple iPhone 13 max pro  (64 GB) - (Product) RED (3rd Generation)\",\n        \"description\": \"11.94 cm (4.7-inch) Retina HD display\\nAdvanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps\\n7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording\\nA15 Bionic chip for lightning-fast performance\\nUp to 15 hours of video playback\\nDurable design and IP67 water resistance\\nHome button with Touch ID for secure authentication\\niOS 15 packs new features to do more with iPhone than ever before\",\n        \"price\": 109901,\n        \"averageRating\": 0,\n        \"image\": [\n            {\n                \"public_id\": \"shop/ps7tzllbepmllkpxlnaw\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970997/shop/ps7tzllbepmllkpxlnaw.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a64\"\n            },\n            {\n                \"public_id\": \"shop/s94g2w7uvt3wtph41w3i\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970998/shop/s94g2w7uvt3wtph41w3i.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a65\"\n            },\n            {\n                \"public_id\": \"shop/lxk6gbs3kfbb3nf7gqrn\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970999/shop/lxk6gbs3kfbb3nf7gqrn.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a66\"\n            },\n            {\n                \"public_id\": \"shop/rujedtgof6en6nxbuamt\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971000/shop/rujedtgof6en6nxbuamt.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a67\"\n            },\n            {\n                \"public_id\": \"shop/ceh9xnbyc87vi1uvssr6\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971002/shop/ceh9xnbyc87vi1uvssr6.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a68\"\n            },\n            {\n                \"public_id\": \"shop/cpuupdvfwlr8af30eqyj\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971003/shop/cpuupdvfwlr8af30eqyj.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a69\"\n            }\n        ],\n        \"category\": \"Mobile\",\n        \"stock\": 100,\n        \"numberOfReviews\": 0,\n        \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n        \"_id\": \"62a4da7ca71f4f98088c3a63\",\n        \"reviews\": [],\n        \"createdAt\": \"2022-06-11T18:10:04.322Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get all products lists",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abc@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"abc@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "14305"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37e1-JKdmRNvCN1COtmpxt/D8x1FXDz8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:10:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"count\": 7,\n    \"productsCount\": 7,\n    \"limit\": 8,\n    \"pagination\": {},\n    \"data\": [\n        {\n            \"_id\": \"62a4da7ca71f4f98088c3a63\",\n            \"name\": \"Apple iPhone 13 max pro  (64 GB) - (Product) RED (3rd Generation)\",\n            \"description\": \"11.94 cm (4.7-inch) Retina HD display\\nAdvanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps\\n7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording\\nA15 Bionic chip for lightning-fast performance\\nUp to 15 hours of video playback\\nDurable design and IP67 water resistance\\nHome button with Touch ID for secure authentication\\niOS 15 packs new features to do more with iPhone than ever before\",\n            \"price\": 109901,\n            \"averageRating\": 0,\n            \"image\": [\n                {\n                    \"public_id\": \"shop/ps7tzllbepmllkpxlnaw\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970997/shop/ps7tzllbepmllkpxlnaw.jpg\",\n                    \"_id\": \"62a4da7ca71f4f98088c3a64\"\n                },\n                {\n                    \"public_id\": \"shop/s94g2w7uvt3wtph41w3i\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970998/shop/s94g2w7uvt3wtph41w3i.jpg\",\n                    \"_id\": \"62a4da7ca71f4f98088c3a65\"\n                },\n                {\n                    \"public_id\": \"shop/lxk6gbs3kfbb3nf7gqrn\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970999/shop/lxk6gbs3kfbb3nf7gqrn.jpg\",\n                    \"_id\": \"62a4da7ca71f4f98088c3a66\"\n                },\n                {\n                    \"public_id\": \"shop/rujedtgof6en6nxbuamt\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971000/shop/rujedtgof6en6nxbuamt.jpg\",\n                    \"_id\": \"62a4da7ca71f4f98088c3a67\"\n                },\n                {\n                    \"public_id\": \"shop/ceh9xnbyc87vi1uvssr6\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971002/shop/ceh9xnbyc87vi1uvssr6.jpg\",\n                    \"_id\": \"62a4da7ca71f4f98088c3a68\"\n                },\n                {\n                    \"public_id\": \"shop/cpuupdvfwlr8af30eqyj\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971003/shop/cpuupdvfwlr8af30eqyj.jpg\",\n                    \"_id\": \"62a4da7ca71f4f98088c3a69\"\n                }\n            ],\n            \"category\": \"Mobile\",\n            \"stock\": 100,\n            \"numberOfReviews\": 0,\n            \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n            \"reviews\": [],\n            \"createdAt\": \"2022-06-11T18:10:04.322Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"629fa58bbf8233932a2f940d\",\n            \"name\": \"Apple iPhone SE (64 GB) - (Product) RED (3rd Generation)\",\n            \"description\": \"11.94 cm (4.7-inch) Retina HD display\\nAdvanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps\\n7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording\\nA15 Bionic chip for lightning-fast performance\\nUp to 15 hours of video playback\\nDurable design and IP67 water resistance\\nHome button with Touch ID for secure authentication\\niOS 15 packs new features to do more with iPhone than ever before\",\n            \"price\": 40990,\n            \"averageRating\": 0,\n            \"image\": [\n                {\n                    \"public_id\": \"shop/txkd6vyqjuntegico1aj\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629763/shop/txkd6vyqjuntegico1aj.jpg\",\n                    \"_id\": \"629fa58bbf8233932a2f940e\"\n                },\n                {\n                    \"public_id\": \"shop/cksslci7uwfcoxreu52s\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629764/shop/cksslci7uwfcoxreu52s.jpg\",\n                    \"_id\": \"629fa58bbf8233932a2f940f\"\n                },\n                {\n                    \"public_id\": \"shop/qzagw5aicwumhjkgc06y\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629766/shop/qzagw5aicwumhjkgc06y.jpg\",\n                    \"_id\": \"629fa58bbf8233932a2f9410\"\n                },\n                {\n                    \"public_id\": \"shop/rsi4cj9ys0ew04s3svm1\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629767/shop/rsi4cj9ys0ew04s3svm1.jpg\",\n                    \"_id\": \"629fa58bbf8233932a2f9411\"\n                },\n                {\n                    \"public_id\": \"shop/mbvtqx0dvzfoyt6pzrcu\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629768/shop/mbvtqx0dvzfoyt6pzrcu.jpg\",\n                    \"_id\": \"629fa58bbf8233932a2f9412\"\n                },\n                {\n                    \"public_id\": \"shop/qxuhuklc5ry1xh0obuci\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629770/shop/qxuhuklc5ry1xh0obuci.jpg\",\n                    \"_id\": \"629fa58bbf8233932a2f9413\"\n                }\n            ],\n            \"category\": \"Mobile\",\n            \"stock\": 100,\n            \"numberOfReviews\": 0,\n            \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n            \"reviews\": [],\n            \"createdAt\": \"2022-06-07T19:22:51.337Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"629fa51dbf8233932a2f9404\",\n            \"name\": \"Apple iPhone 13 Pro Max (128GB) - Sierra Blue\",\n            \"description\": \"7 cm (6.7-inch) Super Retina XDR display with ProMotion for a faster, more responsive feel\\nCinematic mode adds shallow depth of field and shifts focus automatically in your videos\\nPro camera system with new 12MP Telephoto, Wide and Ultra Wide cameras; LiDAR Scanner; 6x optical zoom range; macro photography; Photographic Styles, ProRes video, Smart HDR 4, Night mode, Apple ProRAW, 4K Dolby Vision HDR recording\\n12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording\\nA15 Bionic chip for lightning-fast performance\\nUp to 28 hours of video playback, the best battery life ever in an iPhone\\nDurable design with Ceramic Shield\",\n            \"price\": 127490,\n            \"averageRating\": 0,\n            \"image\": [\n                {\n                    \"public_id\": \"shop/xlu87d3asyvsutcpcnvh\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629653/shop/xlu87d3asyvsutcpcnvh.jpg\",\n                    \"_id\": \"629fa51dbf8233932a2f9405\"\n                },\n                {\n                    \"public_id\": \"shop/hbajotk4hvekleb4cxff\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629654/shop/hbajotk4hvekleb4cxff.jpg\",\n                    \"_id\": \"629fa51dbf8233932a2f9406\"\n                },\n                {\n                    \"public_id\": \"shop/dwhqzo1otckseyahyypy\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629655/shop/dwhqzo1otckseyahyypy.jpg\",\n                    \"_id\": \"629fa51dbf8233932a2f9407\"\n                },\n                {\n                    \"public_id\": \"shop/ibygkxq2mjezjxjunqy4\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629657/shop/ibygkxq2mjezjxjunqy4.jpg\",\n                    \"_id\": \"629fa51dbf8233932a2f9408\"\n                },\n                {\n                    \"public_id\": \"shop/iorgshnds2hof0bhafew\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629658/shop/iorgshnds2hof0bhafew.jpg\",\n                    \"_id\": \"629fa51dbf8233932a2f9409\"\n                },\n                {\n                    \"public_id\": \"shop/ltwk2dp5cax6wvkiqrzv\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629660/shop/ltwk2dp5cax6wvkiqrzv.jpg\",\n                    \"_id\": \"629fa51dbf8233932a2f940a\"\n                }\n            ],\n            \"category\": \"Mobile\",\n            \"stock\": 100,\n            \"numberOfReviews\": 0,\n            \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n            \"reviews\": [],\n            \"createdAt\": \"2022-06-07T19:21:01.691Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"629fa496bf8233932a2f93fd\",\n            \"name\": \"Apple iPhone 12 (64GB) - Black\",\n            \"description\": \"6.1-inch (15.5 cm diagonal) Super Retina XDR display\\nCeramic Shield, tougher than any smartphone glass\\nA14 Bionic chip, the fastest chip ever in a smartphone\\nAdvanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep Fusion, Smart HDR 3, 4K Dolby Vision HDR recording\\n12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording\\nIndustry-leading IP68 water resistance\\nSupports MagSafe accessories for easy attach and faster wireless charging\\niOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more\",\n            \"price\": 55900,\n            \"averageRating\": 0,\n            \"image\": [\n                {\n                    \"public_id\": \"shop/r6ckqoryp61xtcexykaw\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629520/shop/r6ckqoryp61xtcexykaw.jpg\",\n                    \"_id\": \"629fa496bf8233932a2f93fe\"\n                },\n                {\n                    \"public_id\": \"shop/tfv6f5w2kn3yyp7zfq9x\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629521/shop/tfv6f5w2kn3yyp7zfq9x.jpg\",\n                    \"_id\": \"629fa496bf8233932a2f93ff\"\n                },\n                {\n                    \"public_id\": \"shop/oa2n9sec7zlacqx8juom\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629522/shop/oa2n9sec7zlacqx8juom.jpg\",\n                    \"_id\": \"629fa496bf8233932a2f9400\"\n                },\n                {\n                    \"public_id\": \"shop/djhlespzrvf0uym2r1kc\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629525/shop/djhlespzrvf0uym2r1kc.jpg\",\n                    \"_id\": \"629fa496bf8233932a2f9401\"\n                }\n            ],\n            \"category\": \"Mobile\",\n            \"stock\": 100,\n            \"numberOfReviews\": 0,\n            \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n            \"reviews\": [],\n            \"createdAt\": \"2022-06-07T19:18:46.364Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"629fa38fbf8233932a2f93e9\",\n            \"name\": \"Noise ColorFit Pulse Grand Smart Watch with 1.69\\\" HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2 Monitoring Smartwatches for Men & Women (Jet Black)\",\n            \"description\": \"1.69\\\" grand display: Get the rich immersive viewing experience on the 1.69\\\" LCD display.\\n60 sports modes: Take your pick from a wide range of 60 sports modes.\\nInstant charge: Now enjoy more than a day’s worth/25 hours of battery in just 15 minutes of charge. Battery Capacity: 260 mAh\\n150+ cloud-based & customisable watch faces: Choose from 150+ cloud-based and customisable watch faces and change your look to suit your outfit.\\nNoise Health suite: Get valuable insights about your health from Noise Health Suite featuring 24*7 heart rate, stress, blood oxygen, sleep monitor and menstrual cycle tracking.\\nQuick-replies to texts and calls: Stay in touch with the world with quick replies available for Android.\\nIP68 waterproof: Live your life the way you want to, thanks to the IP68 waterproof rating.\\n7-day battery: Charge your watch once and go about your week without a hitch.\",\n            \"price\": 1999,\n            \"averageRating\": 5,\n            \"image\": [\n                {\n                    \"public_id\": \"shop/r9qebqmcraqr5kciqcla\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629253/shop/r9qebqmcraqr5kciqcla.jpg\",\n                    \"_id\": \"629fa38fbf8233932a2f93ea\"\n                },\n                {\n                    \"public_id\": \"shop/qvsw6lo6ldeq9wdv47oo\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629254/shop/qvsw6lo6ldeq9wdv47oo.jpg\",\n                    \"_id\": \"629fa38fbf8233932a2f93eb\"\n                },\n                {\n                    \"public_id\": \"shop/okq0encstzqftzplzqas\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629256/shop/okq0encstzqftzplzqas.jpg\",\n                    \"_id\": \"629fa38fbf8233932a2f93ec\"\n                },\n                {\n                    \"public_id\": \"shop/nix19ezbi11dgsxekfyr\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629257/shop/nix19ezbi11dgsxekfyr.jpg\",\n                    \"_id\": \"629fa38fbf8233932a2f93ed\"\n                },\n                {\n                    \"public_id\": \"shop/aghi9erwmd4xz6bmly8f\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629259/shop/aghi9erwmd4xz6bmly8f.jpg\",\n                    \"_id\": \"629fa38fbf8233932a2f93ee\"\n                },\n                {\n                    \"public_id\": \"shop/nbi6ksdldicdv3y3cq7w\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629260/shop/nbi6ksdldicdv3y3cq7w.jpg\",\n                    \"_id\": \"629fa38fbf8233932a2f93ef\"\n                },\n                {\n                    \"public_id\": \"shop/xhbck5idgj1xycb30bol\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629261/shop/xhbck5idgj1xycb30bol.jpg\",\n                    \"_id\": \"629fa38fbf8233932a2f93f0\"\n                }\n            ],\n            \"category\": \"Electronics\",\n            \"stock\": 100,\n            \"numberOfReviews\": 1,\n            \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n            \"reviews\": [\n                {\n                    \"user\": \"629f9e4aa14d92e4bba50acb\",\n                    \"name\": \"admin\",\n                    \"rating\": 5,\n                    \"comment\": \"BEST Product \",\n                    \"_id\": \"629fac5a8ee31b3d7ec16671\"\n                }\n            ],\n            \"createdAt\": \"2022-06-07T19:14:23.337Z\",\n            \"__v\": 1\n        },\n        {\n            \"_id\": \"629fa18ebf8233932a2f93c9\",\n            \"name\": \"boAt Rockerz 400 Bluetooth Wireless On Ear Headphones with Mic and upto 8 Hours Playback & Soft Padded Ear Cushions (Carbon Black)\",\n            \"description\": \"With 40mm Drivers get ready to immerse in HD auditory experience with super extra bass to get the day going\\nPlug into your rhythm with style via the wireless Bluetooth headset and carry the vibe wherever you go\\nStay immersed into Nirvana for extended durations with a playtime of up to 8 hours, Charging Time: 3 hours\\nIts lightweight and ergonomic design offers the comfort and ease while you listen to your favourite artists and have fun\\nThe easy access integrated controls with built-in mic offers a smooth user experience and hands-free communication on the go\\nStay connected to your sound via not one but two modes: Bluetooth as well as AUX\\n1 year warranty from the date of purchase.\",\n            \"price\": 1349,\n            \"averageRating\": 0,\n            \"image\": [\n                {\n                    \"public_id\": \"shop/wdyda08osaapggql0fka\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628741/shop/wdyda08osaapggql0fka.jpg\",\n                    \"_id\": \"629fa18ebf8233932a2f93ca\"\n                },\n                {\n                    \"public_id\": \"shop/sstlu8pskylb6jf7lyqf\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628743/shop/sstlu8pskylb6jf7lyqf.jpg\",\n                    \"_id\": \"629fa18ebf8233932a2f93cb\"\n                },\n                {\n                    \"public_id\": \"shop/ukmgty7hqir0x2882x9j\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628744/shop/ukmgty7hqir0x2882x9j.jpg\",\n                    \"_id\": \"629fa18ebf8233932a2f93cc\"\n                },\n                {\n                    \"public_id\": \"shop/lodyimp9zatmvsipvtsv\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628746/shop/lodyimp9zatmvsipvtsv.jpg\",\n                    \"_id\": \"629fa18ebf8233932a2f93cd\"\n                },\n                {\n                    \"public_id\": \"shop/jvbb4gu1ldbrib0qm6to\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628747/shop/jvbb4gu1ldbrib0qm6to.jpg\",\n                    \"_id\": \"629fa18ebf8233932a2f93ce\"\n                },\n                {\n                    \"public_id\": \"shop/jinbz6ph3ivpkctto3yx\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628749/shop/jinbz6ph3ivpkctto3yx.jpg\",\n                    \"_id\": \"629fa18ebf8233932a2f93cf\"\n                }\n            ],\n            \"category\": \"Audio And Video\",\n            \"stock\": 100,\n            \"numberOfReviews\": 0,\n            \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n            \"reviews\": [],\n            \"createdAt\": \"2022-06-07T19:05:50.945Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"629fa036a14d92e4bba50ad4\",\n            \"name\": \"Boult Audio ProBass Curve Neckband Bluetooth Headset\",\n            \"description\": \"This Boult Bluetooth headset comes with a durable flexi-band and magnetic earbuds. Music at its best, this headset provides you with HDR quality sound output with deep basses and balanced lows and highs. With support for 3D acoustics, this headset has stellar connectivity with a 10-metre range.\",\n            \"price\": 899,\n            \"averageRating\": 4,\n            \"image\": [\n                {\n                    \"public_id\": \"shop/xh03rdqc8fxtfquuuklr\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628401/shop/xh03rdqc8fxtfquuuklr.png\",\n                    \"_id\": \"629fa036a14d92e4bba50ad5\"\n                },\n                {\n                    \"public_id\": \"shop/rtbsfr3gkjbp5khmfxjg\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628402/shop/rtbsfr3gkjbp5khmfxjg.png\",\n                    \"_id\": \"629fa036a14d92e4bba50ad6\"\n                },\n                {\n                    \"public_id\": \"shop/bj2dgkybpyxuyijhmnan\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628404/shop/bj2dgkybpyxuyijhmnan.png\",\n                    \"_id\": \"629fa036a14d92e4bba50ad7\"\n                },\n                {\n                    \"public_id\": \"shop/rcsrozu9esozevtoxwol\",\n                    \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654628405/shop/rcsrozu9esozevtoxwol.jpg\",\n                    \"_id\": \"629fa036a14d92e4bba50ad8\"\n                }\n            ],\n            \"category\": \"Audio And Video\",\n            \"stock\": 200,\n            \"numberOfReviews\": 1,\n            \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n            \"reviews\": [\n                {\n                    \"user\": \"629f9e4aa14d92e4bba50acb\",\n                    \"name\": \"admin\",\n                    \"rating\": 4,\n                    \"comment\": \" Boult gives surround sound experience whereas Boat rockerz not.\\r\\n2. Bass experience is decent balanced with treble whereas boat rockerz gives rich bass experience.\\r\\n3. Boult looks more stylish compared to boat rockerz.\\r\\n4. Boult ProBass gives more Battery backup.\\r\\n5. There is no connectivity issue in both earphones.\\r\\nMy suggestion - If your priority is bass than go for boat rockerz but if you want to feel each instru...\",\n                    \"_id\": \"629fa8f28ee31b3d7ec16645\"\n                }\n            ],\n            \"createdAt\": \"2022-06-07T19:00:06.666Z\",\n            \"__v\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Admin user Update product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": [
+										"/C:/Users/zeesh/OneDrive/Desktop/61A0Zu4K-TL._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/61F2F2cZ0OL._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/61FgV1NGQHL._SX679_.jpg",
+										"/C:/Users/zeesh/OneDrive/Desktop/61Hw46bsSmL._SX679_.jpg"
+									]
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/admin/products/62a4da7ca71f4f98088c3a63",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"products",
+								"62a4da7ca71f4f98088c3a63"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update product",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": [
+												"/C:/Users/zeesh/OneDrive/Desktop/61A0Zu4K-TL._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/61F2F2cZ0OL._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/61FgV1NGQHL._SX679_.jpg",
+												"/C:/Users/zeesh/OneDrive/Desktop/61Hw46bsSmL._SX679_.jpg"
+											]
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/admin/products/62a4da7ca71f4f98088c3a63",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"products",
+										"62a4da7ca71f4f98088c3a63"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1948"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79c-GwcS/ajxHzHsTr5cADHQeeB8XCw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:11:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"62a4da7ca71f4f98088c3a63\",\n        \"name\": \"Apple iPhone 13 max pro  (64 GB) - (Product) RED (3rd Generation)\",\n        \"description\": \"11.94 cm (4.7-inch) Retina HD display\\nAdvanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps\\n7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording\\nA15 Bionic chip for lightning-fast performance\\nUp to 15 hours of video playback\\nDurable design and IP67 water resistance\\nHome button with Touch ID for secure authentication\\niOS 15 packs new features to do more with iPhone than ever before\",\n        \"price\": 109901,\n        \"averageRating\": 0,\n        \"image\": [\n            {\n                \"public_id\": \"shop/ps7tzllbepmllkpxlnaw\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970997/shop/ps7tzllbepmllkpxlnaw.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a64\"\n            },\n            {\n                \"public_id\": \"shop/s94g2w7uvt3wtph41w3i\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970998/shop/s94g2w7uvt3wtph41w3i.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a65\"\n            },\n            {\n                \"public_id\": \"shop/lxk6gbs3kfbb3nf7gqrn\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654970999/shop/lxk6gbs3kfbb3nf7gqrn.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a66\"\n            },\n            {\n                \"public_id\": \"shop/rujedtgof6en6nxbuamt\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971000/shop/rujedtgof6en6nxbuamt.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a67\"\n            },\n            {\n                \"public_id\": \"shop/ceh9xnbyc87vi1uvssr6\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971002/shop/ceh9xnbyc87vi1uvssr6.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a68\"\n            },\n            {\n                \"public_id\": \"shop/cpuupdvfwlr8af30eqyj\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654971003/shop/cpuupdvfwlr8af30eqyj.jpg\",\n                \"_id\": \"62a4da7ca71f4f98088c3a69\"\n            }\n        ],\n        \"category\": \"Mobile\",\n        \"stock\": 100,\n        \"numberOfReviews\": 0,\n        \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n        \"reviews\": [],\n        \"createdAt\": \"2022-06-11T18:10:04.322Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Admin user Product Deleted",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/v1/admin/products/62a4da7ca71f4f98088c3a63",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"products",
+								"62a4da7ca71f4f98088c3a63"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Admin user Product Deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/api/v1/admin/products/62a4da7ca71f4f98088c3a63",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"products",
+										"62a4da7ca71f4f98088c3a63"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-EpZNdEnJEktRLbFBbB1vRgcg0dg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:14:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Product has been deleted successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Single Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/v1/product/629fa58bbf8233932a2f940d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"629fa58bbf8233932a2f940d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Single Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/api/v1/product/629fa58bbf8233932a2f940d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"629fa58bbf8233932a2f940d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1941"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"795-uv2Z+0pzEAeV5ZJYoLSBBXpHBhQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:15:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"product\": {\n        \"_id\": \"629fa58bbf8233932a2f940d\",\n        \"name\": \"Apple iPhone SE (64 GB) - (Product) RED (3rd Generation)\",\n        \"description\": \"11.94 cm (4.7-inch) Retina HD display\\nAdvanced single-camera system with 12MP Wide camera; Smart HDR 4, Photographic Styles, Portrait mode, and 4K video up to 60 fps\\n7MP FaceTime HD camera with Smart HDR 4, Photographic Styles, Portrait mode, and 1080p video recording\\nA15 Bionic chip for lightning-fast performance\\nUp to 15 hours of video playback\\nDurable design and IP67 water resistance\\nHome button with Touch ID for secure authentication\\niOS 15 packs new features to do more with iPhone than ever before\",\n        \"price\": 40990,\n        \"averageRating\": 0,\n        \"image\": [\n            {\n                \"public_id\": \"shop/txkd6vyqjuntegico1aj\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629763/shop/txkd6vyqjuntegico1aj.jpg\",\n                \"_id\": \"629fa58bbf8233932a2f940e\"\n            },\n            {\n                \"public_id\": \"shop/cksslci7uwfcoxreu52s\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629764/shop/cksslci7uwfcoxreu52s.jpg\",\n                \"_id\": \"629fa58bbf8233932a2f940f\"\n            },\n            {\n                \"public_id\": \"shop/qzagw5aicwumhjkgc06y\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629766/shop/qzagw5aicwumhjkgc06y.jpg\",\n                \"_id\": \"629fa58bbf8233932a2f9410\"\n            },\n            {\n                \"public_id\": \"shop/rsi4cj9ys0ew04s3svm1\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629767/shop/rsi4cj9ys0ew04s3svm1.jpg\",\n                \"_id\": \"629fa58bbf8233932a2f9411\"\n            },\n            {\n                \"public_id\": \"shop/mbvtqx0dvzfoyt6pzrcu\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629768/shop/mbvtqx0dvzfoyt6pzrcu.jpg\",\n                \"_id\": \"629fa58bbf8233932a2f9412\"\n            },\n            {\n                \"public_id\": \"shop/qxuhuklc5ry1xh0obuci\",\n                \"public_url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629770/shop/qxuhuklc5ry1xh0obuci.jpg\",\n                \"_id\": \"629fa58bbf8233932a2f9413\"\n            }\n        ],\n        \"category\": \"Mobile\",\n        \"stock\": 100,\n        \"numberOfReviews\": 0,\n        \"user_id\": \"629f9e4aa14d92e4bba50acb\",\n        \"reviews\": [],\n        \"createdAt\": \"2022-06-07T19:22:51.337Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "super",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "sad@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/zeesh/OneDrive/Desktop/download.png"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "super",
+											"type": "default"
+										},
+										{
+											"key": "email",
+											"value": "sad@gmail.com",
+											"type": "default"
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"src": "/C:/Users/zeesh/OneDrive/Desktop/download.png"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "default"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/user/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTRkNjIzOTkyNzRjZDU3MmEyYmI5MSIsImlhdCI6MTY1NDk2OTg5MSwiZXhwIjoxNjU0OTczNDkxfQ.uCiyyIPVEOxO-hQxZIimzKsf6MVF_xXDjlSF1l1cJU0; Path=/; Expires=Mon, 11 Jul 2022 17:51:31 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "565"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"235-0I1a1QNIp0dRerNSvWVp8p5bAKs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 17:51:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"user\": {\n        \"name\": \"super\",\n        \"email\": \"sad@gmail.com\",\n        \"avatar\": {\n            \"public_id\": \"shop/gsfosple9agwcyq5qygz\",\n            \"url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654969890/shop/gsfosple9agwcyq5qygz.png\"\n        },\n        \"role\": \"user\",\n        \"password\": \"$2a$10$IkNYZmjcqk./mTzvB9zUBO.wyabqicprBQuQuPJuQ/3l2Y7gSM3mq\",\n        \"_id\": \"62a4d62399274cd572a2bb91\",\n        \"createdAt\": \"2022-06-11T17:51:31.205Z\",\n        \"__v\": 0\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTRkNjIzOTkyNzRjZDU3MmEyYmI5MSIsImlhdCI6MTY1NDk2OTg5MSwiZXhwIjoxNjU0OTczNDkxfQ.uCiyyIPVEOxO-hQxZIimzKsf6MVF_xXDjlSF1l1cJU0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "user login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWY5ZTRhYTE0ZDkyZTRiYmE1MGFjYiIsImlhdCI6MTY1NDk2OTkzMCwiZXhwIjoxNjU0OTczNTMwfQ.GG7iIWH0pv7oOtLXDg4aNfB5BBKucDtb21VD1eyYa9U; Path=/; Expires=Mon, 11 Jul 2022 17:52:10 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "705"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c1-bZ/7W5h2QokajX5SHBmrPruST14\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 17:52:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"user\": {\n        \"avatar\": {\n            \"public_id\": \"shop/chhwr7ofafehsdysqjoj\",\n            \"url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654627913/shop/chhwr7ofafehsdysqjoj.jpg\"\n        },\n        \"_id\": \"629f9e4aa14d92e4bba50acb\",\n        \"name\": \"admin\",\n        \"email\": \"admin@gmail.com\",\n        \"role\": \"admin\",\n        \"password\": \"$2a$10$juuP221Gv0Zbza4zBEEbyuAiM.RXFc2sqRJGKzzgADYRhrNp8Gw3a\",\n        \"createdAt\": \"2022-06-07T18:51:54.445Z\",\n        \"__v\": 0,\n        \"resetPasswordExpire\": \"2022-06-10T17:27:01.168Z\",\n        \"resetPasswordToken\": \"214744b699ff7c8aff3fc0f73a3bd45bbe30259a88203f1e13de09ebd366aaf8\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWY5ZTRhYTE0ZDkyZTRiYmE1MGFjYiIsImlhdCI6MTY1NDk2OTkzMCwiZXhwIjoxNjU0OTczNTMwfQ.GG7iIWH0pv7oOtLXDg4aNfB5BBKucDtb21VD1eyYa9U\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Forget password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"hellot878@gmail.com\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/forgotPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Forget password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"admin@gmail.com\"\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/user/forgotPassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"forgotPassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "68"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"44-3v9dq/sMt0L+rAOWMtAjyuw45ow\""
+								},
+								{
+									"key": "date",
+									"value": "Sat, 11 Jun 2022 17:52:53 GMT"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": \"Email sent Successfully Please check Email\"\n}"
+						}
+					]
+				},
+				{
+					"name": "user verify password token",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"1234567894\",\r\n    \"confirmPassword\":\"1234567894\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/resetpassword/630d170a115da6912f94dc3acf1e61d8bc7c8ab3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"resetpassword",
+								"630d170a115da6912f94dc3acf1e61d8bc7c8ab3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user verify password token",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\":\"1234567894\",\r\n    \"confirmPassword\":\"1234567894\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/user/resetpassword/630d170a115da6912f94dc3acf1e61d8bc7c8ab3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"resetpassword",
+										"630d170a115da6912f94dc3acf1e61d8bc7c8ab3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWY5ZTRhYTE0ZDkyZTRiYmE1MGFjYiIsImlhdCI6MTY1NDk3MDMxOCwiZXhwIjoxNjU0OTczOTE4fQ.AjLz7qc7L2oXgdEOhuo2kgsnbnSlR-hMS7z4_iI46n0; Path=/; Expires=Mon, 11 Jul 2022 17:58:38 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "572"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23c-FCHF4LMsqnkZiHqOH+kFaP6HSiQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 17:58:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"user\": {\n        \"avatar\": {\n            \"public_id\": \"shop/chhwr7ofafehsdysqjoj\",\n            \"url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654627913/shop/chhwr7ofafehsdysqjoj.jpg\"\n        },\n        \"_id\": \"629f9e4aa14d92e4bba50acb\",\n        \"name\": \"admin\",\n        \"email\": \"hellot878@gmail.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2022-06-07T18:51:54.445Z\",\n        \"__v\": 0,\n        \"password\": \"$2a$10$HAiHL7vBiZ2sJBk9Zf8HJu65QSm9gi4trzsh.MB2tsSuUaP7ztWv.\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWY5ZTRhYTE0ZDkyZTRiYmE1MGFjYiIsImlhdCI6MTY1NDk3MDMxOCwiZXhwIjoxNjU0OTczOTE4fQ.AjLz7qc7L2oXgdEOhuo2kgsnbnSlR-hMS7z4_iI46n0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Login User Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTM1MDU2OCwiZXhwIjoxNjQ5MzU0MTY4fQ.ZMM2DzNOfZ5S3MsdM29AfbbeI0GIN9v8cC7IomJ4wKg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abc@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Login User Details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"abc@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/user/me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "316"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"13c-EU9iIQx8b9UFOpX2kZA8U5iGpHw\""
+								},
+								{
+									"key": "date",
+									"value": "Sat, 11 Jun 2022 17:59:04 GMT"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"user\": {\n        \"avatar\": {\n            \"public_id\": \"shop/chhwr7ofafehsdysqjoj\",\n            \"url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654627913/shop/chhwr7ofafehsdysqjoj.jpg\"\n        },\n        \"_id\": \"629f9e4aa14d92e4bba50acb\",\n        \"name\": \"admin\",\n        \"email\": \"hellot878@gmail.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2022-06-07T18:51:54.445Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "user password change",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTM1MDU2OCwiZXhwIjoxNjQ5MzU0MTY4fQ.ZMM2DzNOfZ5S3MsdM29AfbbeI0GIN9v8cC7IomJ4wKg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \"currentPassword\":\"1234567894\",\r\n    \"newPassword\":\"123456\",\r\n     \"confirmPassword\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/updatePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updatePassword"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update password ",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \"currentPassword\":\"1234567894\",\r\n    \"newPassword\":\"123456\",\r\n     \"confirmPassword\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/user/updatePassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"updatePassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWY5ZTRhYTE0ZDkyZTRiYmE1MGFjYiIsImlhdCI6MTY1NDk3MDQxMSwiZXhwIjoxNjU0OTc0MDExfQ.NsadI0SWHT2tkOZYUXZnFxBC1Ol1qwIUyOKd1ioPuZ8; Path=/; Expires=Mon, 11 Jul 2022 18:00:11 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "572"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23c-uoOCD4/twS6ch6zENmVQ3yvruA8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:00:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"user\": {\n        \"avatar\": {\n            \"public_id\": \"shop/chhwr7ofafehsdysqjoj\",\n            \"url\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654627913/shop/chhwr7ofafehsdysqjoj.jpg\"\n        },\n        \"_id\": \"629f9e4aa14d92e4bba50acb\",\n        \"name\": \"admin\",\n        \"email\": \"hellot878@gmail.com\",\n        \"role\": \"admin\",\n        \"password\": \"$2a$10$4M7vDswbENYUsVy4KxNzWOtHtKqkr/kxsJRqXUo.kMHKzu36eqw.m\",\n        \"createdAt\": \"2022-06-07T18:51:54.445Z\",\n        \"__v\": 0\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWY5ZTRhYTE0ZDkyZTRiYmE1MGFjYiIsImlhdCI6MTY1NDk3MDQxMSwiZXhwIjoxNjU0OTc0MDExfQ.NsadI0SWHT2tkOZYUXZnFxBC1Ol1qwIUyOKd1ioPuZ8\"\n}"
+						}
+					]
+				},
+				{
+					"name": "user profie update ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTM1MjU0MSwiZXhwIjoxNjQ5MzU2MTQxfQ.e_PUxSjKgmsPRYHb9cXvW-HncHsIy5LH9Lu5g3B9Q3g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"jishan\",\r\n    \"email\":\"a@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/me/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"me",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin user get all user list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTM1NDIxMSwiZXhwIjoxNjQ5MzU3ODExfQ.pPM8uO3anRS2e6O2wqfeYqKofHeMbguk0ijGTwkHiTI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abc@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/admin/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin get single user details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTM1NDIxMSwiZXhwIjoxNjQ5MzU3ODExfQ.pPM8uO3anRS2e6O2wqfeYqKofHeMbguk0ijGTwkHiTI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abc@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/admin/users/624ec3af8b5c3e4a776cc110",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"admin",
+								"users",
+								"624ec3af8b5c3e4a776cc110"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTQzOTgyOCwiZXhwIjoxNjQ5NDQzNDI4fQ.UPDLR_lYnSejVLv9mpsPLTI1MSOaNJXSXUZowidUnJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Delivered\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/admin/order/62505c2de4589ab7483ff55d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"order",
+								"62505c2de4589ab7483ff55d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order mail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTQzOTgyOCwiZXhwIjoxNjQ5NDQzNDI4fQ.UPDLR_lYnSejVLv9mpsPLTI1MSOaNJXSXUZowidUnJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Delivered\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/admin/order/62505c2de4589ab7483ff55d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"order",
+								"62505c2de4589ab7483ff55d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new ordeer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYzMzcxY2YxNjIwOGQyMmY0ZGUyZCIsImlhdCI6MTY0OTQzMzYyOSwiZXhwIjoxNjQ5NDM3MjI5fQ.uJuZJakRihXjPmYsCRCUrHlPJUej7u3eykoxOj0LfmE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"itemsPrice\":500,\r\n    \"taxPrice\":36,\r\n    \"shippingPrice\":100,\r\n    \"totalPrice\":1000,\r\n\r\n \"orderItems\":[\r\n        {\r\n            \"name\":\"jishan jamal\", \r\n            \"price\":500,\r\n            \"quantity\":6,\r\n            \"image\":\"abc.jpg\",\r\n            \"product\":\"624ddbd48b605e9c41c844cf\"\r\n        }\r\n\r\n    ],    \r\n    \"shippingInfo\":{\r\n        \"address\":\"delhi v17\",\r\n        \"city\":\"mumbai\",\r\n          \"state\":\"Up\",\r\n            \"country\":\"India\",\r\n            \"pinCode\":221701,\r\n            \"phoneNo\":9898789878\r\n    },\r\n      \"paymentInfo\":{\r\n        \"id\":\"uuuu\",\r\n        \"status\":\"success\"\r\n    }\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/order/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"new"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create new ordeer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"itemsPrice\":500,\r\n    \"taxPrice\":36,\r\n    \"shippingPrice\":100,\r\n    \"totalPrice\":1000,\r\n\r\n \"orderItems\":[\r\n        {\r\n            \"name\":\"jishan jamal\", \r\n            \"price\":500,\r\n            \"quantity\":6,\r\n            \"image\":\"abc.jpg\",\r\n            \"product\":\"624ddbd48b605e9c41c844cf\"\r\n        }\r\n\r\n    ],    \r\n    \"shippingInfo\":{\r\n        \"address\":\"delhi v17\",\r\n        \"city\":\"mumbai\",\r\n          \"state\":\"Up\",\r\n            \"country\":\"India\",\r\n            \"pinCode\":221701,\r\n            \"phoneNo\":9898789878\r\n    },\r\n      \"paymentInfo\":{\r\n        \"id\":\"uuuu\",\r\n        \"status\":\"success\"\r\n    }\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/order/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"order",
+										"new"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "595"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"253-ZzE3T45+w8aFohugKkrfLEAPYBc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:16:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"order\": {\n        \"shippingInfo\": {\n            \"address\": \"delhi v17\",\n            \"city\": \"mumbai\",\n            \"state\": \"Up\",\n            \"country\": \"India\",\n            \"pinCode\": 221701,\n            \"phoneNo\": 9898789878\n        },\n        \"orderItems\": [\n            {\n                \"name\": \"jishan jamal\",\n                \"price\": 500,\n                \"quantity\": 6,\n                \"image\": \"abc.jpg\",\n                \"product\": \"624ddbd48b605e9c41c844cf\",\n                \"_id\": \"62a4dbfda71f4f98088c3a80\"\n            }\n        ],\n        \"user\": \"629f9e4aa14d92e4bba50acb\",\n        \"paymentInfo\": {\n            \"id\": \"uuuu\",\n            \"status\": \"success\"\n        },\n        \"paidAt\": \"2022-06-11T18:16:29.582Z\",\n        \"itemsPrice\": 500,\n        \"taxPrice\": 36,\n        \"shippingPrice\": 100,\n        \"totalPrice\": 1000,\n        \"orderStatus\": \"Processing\",\n        \"_id\": \"62a4dbfda71f4f98088c3a7f\",\n        \"createdAt\": \"2022-06-11T18:16:29.585Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get single order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTQzOTgyOCwiZXhwIjoxNjQ5NDQzNDI4fQ.UPDLR_lYnSejVLv9mpsPLTI1MSOaNJXSXUZowidUnJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"123456789\",\r\n    \"confirmPassword\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/orders/62505c2de4589ab7483ff55d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"62505c2de4589ab7483ff55d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all order by admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTQzOTgyOCwiZXhwIjoxNjQ5NDQzNDI4fQ.UPDLR_lYnSejVLv9mpsPLTI1MSOaNJXSXUZowidUnJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/v1/admin/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all order by admin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/api/v1/admin/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4704"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1260-lK0FypSolfPkEGpK8WjcsGyqzGM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:16:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"totoalammout\": 204548.82,\n    \"adminorder\": [\n        {\n            \"shippingInfo\": {\n                \"address\": \"delhi\",\n                \"city\": \"delhi\",\n                \"state\": \"HR\",\n                \"country\": \"IN\",\n                \"pinCode\": 221701,\n                \"phoneNo\": 3333232323\n            },\n            \"paymentInfo\": {\n                \"id\": \"pi_3KzPneSFlKmeib2W19Xp9jT0\",\n                \"status\": \"succeeded\"\n            },\n            \"_id\": \"627ff64dbb9691009cfb1fc2\",\n            \"orderItems\": [\n                {\n                    \"name\": \"a\",\n                    \"price\": 233,\n                    \"quantity\": 1,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1650467990/shop/ped0rf2msvsxxxebf8mx.jpg\",\n                    \"product\": \"626024959d45b9ef8459fc51\",\n                    \"_id\": \"627ff64dbb9691009cfb1fc3\"\n                },\n                {\n                    \"name\": \"welcome\",\n                    \"price\": 5000,\n                    \"quantity\": 4,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1650470115/shop/lxtwytfjf33oqbcqmahm.jpg\",\n                    \"product\": \"62602ce6b0f9efd89068a46a\",\n                    \"_id\": \"627ff64dbb9691009cfb1fc4\"\n                }\n            ],\n            \"user\": \"625fd5eac30d14764b6bebef\",\n            \"paidAt\": \"2022-05-14T18:34:53.039Z\",\n            \"itemsPrice\": 20233,\n            \"taxPrice\": 3641.94,\n            \"shippingPrice\": 0,\n            \"totalPrice\": 23874.94,\n            \"orderStatus\": \"Processing\",\n            \"createdAt\": \"2022-05-14T18:34:53.044Z\",\n            \"__v\": 0\n        },\n        {\n            \"shippingInfo\": {\n                \"address\": \"delhi\",\n                \"city\": \"delhi\",\n                \"state\": \"HR\",\n                \"country\": \"IN\",\n                \"pinCode\": 221701,\n                \"phoneNo\": 3333232323\n            },\n            \"paymentInfo\": {\n                \"id\": \"pi_3KzPtKSFlKmeib2W1MQDV6RH\",\n                \"status\": \"succeeded\"\n            },\n            \"_id\": \"627ff7aebb9691009cfb1fc8\",\n            \"orderItems\": [\n                {\n                    \"name\": \"a\",\n                    \"price\": 233,\n                    \"quantity\": 1,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1650467990/shop/ped0rf2msvsxxxebf8mx.jpg\",\n                    \"product\": \"626024959d45b9ef8459fc51\",\n                    \"_id\": \"627ff7aebb9691009cfb1fc9\"\n                },\n                {\n                    \"name\": \"welcome\",\n                    \"price\": 5000,\n                    \"quantity\": 4,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1650470115/shop/lxtwytfjf33oqbcqmahm.jpg\",\n                    \"product\": \"62602ce6b0f9efd89068a46a\",\n                    \"_id\": \"627ff7aebb9691009cfb1fca\"\n                }\n            ],\n            \"user\": \"625fd5eac30d14764b6bebef\",\n            \"paidAt\": \"2022-05-14T18:40:46.991Z\",\n            \"itemsPrice\": 20233,\n            \"taxPrice\": 3641.94,\n            \"shippingPrice\": 0,\n            \"totalPrice\": 23874.94,\n            \"orderStatus\": \"Processing\",\n            \"createdAt\": \"2022-05-14T18:40:46.995Z\",\n            \"__v\": 0\n        },\n        {\n            \"shippingInfo\": {\n                \"address\": \"delhi\",\n                \"city\": \"delhi\",\n                \"state\": \"HR\",\n                \"country\": \"IN\",\n                \"pinCode\": 221701,\n                \"phoneNo\": 3333232323\n            },\n            \"paymentInfo\": {\n                \"id\": \"pi_3KzPubSFlKmeib2W1RyLGJqD\",\n                \"status\": \"succeeded\"\n            },\n            \"_id\": \"627ff7fbbb9691009cfb1fd1\",\n            \"orderItems\": [\n                {\n                    \"name\": \"a\",\n                    \"price\": 233,\n                    \"quantity\": 1,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1650467990/shop/ped0rf2msvsxxxebf8mx.jpg\",\n                    \"product\": \"626024959d45b9ef8459fc51\",\n                    \"_id\": \"627ff7fbbb9691009cfb1fd2\"\n                },\n                {\n                    \"name\": \"welcome\",\n                    \"price\": 5000,\n                    \"quantity\": 4,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1650470115/shop/lxtwytfjf33oqbcqmahm.jpg\",\n                    \"product\": \"62602ce6b0f9efd89068a46a\",\n                    \"_id\": \"627ff7fbbb9691009cfb1fd3\"\n                }\n            ],\n            \"user\": \"625fd5eac30d14764b6bebef\",\n            \"paidAt\": \"2022-05-14T18:42:03.217Z\",\n            \"itemsPrice\": 20233,\n            \"taxPrice\": 3641.94,\n            \"shippingPrice\": 0,\n            \"totalPrice\": 23874.94,\n            \"orderStatus\": \"Processing\",\n            \"createdAt\": \"2022-05-14T18:42:03.219Z\",\n            \"__v\": 0\n        },\n        {\n            \"shippingInfo\": {\n                \"address\": \"W 159  Fisrt Floor\",\n                \"city\": \"Noida\",\n                \"state\": \"5\",\n                \"country\": \"AT\",\n                \"pinCode\": 201301,\n                \"phoneNo\": 7906539310\n            },\n            \"paymentInfo\": {\n                \"id\": \"pi_3L9BMDSFlKmeib2W1B3AAN70\",\n                \"status\": \"succeeded\"\n            },\n            \"_id\": \"62a37b228ee31b3d7ec166bf\",\n            \"orderItems\": [\n                {\n                    \"name\": \"Apple iPhone 12 (64GB) - Black\",\n                    \"price\": 55900,\n                    \"quantity\": 1,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629520/shop/r6ckqoryp61xtcexykaw.jpg\",\n                    \"product\": \"629fa496bf8233932a2f93fd\",\n                    \"_id\": \"62a37b228ee31b3d7ec166c0\"\n                }\n            ],\n            \"user\": \"629f9e4aa14d92e4bba50acb\",\n            \"paidAt\": \"2022-06-10T17:10:58.093Z\",\n            \"itemsPrice\": 55900,\n            \"taxPrice\": 10062,\n            \"shippingPrice\": 0,\n            \"totalPrice\": 65962,\n            \"orderStatus\": \"Processing\",\n            \"createdAt\": \"2022-06-10T17:10:58.116Z\",\n            \"__v\": 0\n        },\n        {\n            \"shippingInfo\": {\n                \"address\": \"W 159  Fisrt Floor\",\n                \"city\": \"Noida\",\n                \"state\": \"5\",\n                \"country\": \"AT\",\n                \"pinCode\": 201301,\n                \"phoneNo\": 7906539310\n            },\n            \"paymentInfo\": {\n                \"id\": \"pi_3L9BOASFlKmeib2W0yR5TFWC\",\n                \"status\": \"succeeded\"\n            },\n            \"_id\": \"62a37b988ee31b3d7ec166cb\",\n            \"orderItems\": [\n                {\n                    \"name\": \"Apple iPhone 12 (64GB) - Black\",\n                    \"price\": 55900,\n                    \"quantity\": 1,\n                    \"image\": \"https://res.cloudinary.com/drf6efepe/image/upload/v1654629520/shop/r6ckqoryp61xtcexykaw.jpg\",\n                    \"product\": \"629fa496bf8233932a2f93fd\",\n                    \"_id\": \"62a37b988ee31b3d7ec166cc\"\n                }\n            ],\n            \"user\": \"629f9e4aa14d92e4bba50acb\",\n            \"paidAt\": \"2022-06-10T17:12:56.551Z\",\n            \"itemsPrice\": 55900,\n            \"taxPrice\": 10062,\n            \"shippingPrice\": 0,\n            \"totalPrice\": 65962,\n            \"orderStatus\": \"Processing\",\n            \"createdAt\": \"2022-06-10T17:12:56.554Z\",\n            \"__v\": 0\n        },\n        {\n            \"shippingInfo\": {\n                \"address\": \"delhi v17\",\n                \"city\": \"mumbai\",\n                \"state\": \"Up\",\n                \"country\": \"India\",\n                \"pinCode\": 221701,\n                \"phoneNo\": 9898789878\n            },\n            \"paymentInfo\": {\n                \"id\": \"uuuu\",\n                \"status\": \"success\"\n            },\n            \"_id\": \"62a4dbfda71f4f98088c3a7f\",\n            \"orderItems\": [\n                {\n                    \"name\": \"jishan jamal\",\n                    \"price\": 500,\n                    \"quantity\": 6,\n                    \"image\": \"abc.jpg\",\n                    \"product\": \"624ddbd48b605e9c41c844cf\",\n                    \"_id\": \"62a4dbfda71f4f98088c3a80\"\n                }\n            ],\n            \"user\": \"629f9e4aa14d92e4bba50acb\",\n            \"paidAt\": \"2022-06-11T18:16:29.582Z\",\n            \"itemsPrice\": 500,\n            \"taxPrice\": 36,\n            \"shippingPrice\": 100,\n            \"totalPrice\": 1000,\n            \"orderStatus\": \"Processing\",\n            \"createdAt\": \"2022-06-11T18:16:29.585Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update product status ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGYwOGJhNzRhZmQ1YWY5NTFmZWQ0ZiIsImlhdCI6MTY0OTQzOTgyOCwiZXhwIjoxNjQ5NDQzNDI4fQ.UPDLR_lYnSejVLv9mpsPLTI1MSOaNJXSXUZowidUnJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Delivered\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/admin/order/627ff64dbb9691009cfb1fc2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"order",
+								"627ff64dbb9691009cfb1fc2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update product status ",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"Delivered\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/v1/admin/order/627ff64dbb9691009cfb1fc2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"order",
+										"627ff64dbb9691009cfb1fc2"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35-I9R6UQ9s22j8ZmXkD8LeJDsQW3o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 11 Jun 2022 18:20:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"error\": \"Product Already Delivered\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
